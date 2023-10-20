@@ -1,17 +1,15 @@
-import DragAnimation from './components/DragAnimation'
-import ExitEnterAnimation from './components/ExitEnterAnimation'
-import TextAnimation from './components/TextAnimation'
-import ScrollAnimation from './components/ScrollAnimation'
+
+import { BrowserRouter as Router } from 'react-router-dom'
+import Nav from './components/Nav'
+import AnimatedRoutes from './components/AnimatedRoutes'
 
 function App() {
 
   return (
-    <>
-    <TextAnimation/>
-    <ExitEnterAnimation/>
-    <DragAnimation/>
-    <ScrollAnimation/>
-    </>
+      <Router>
+        <Nav/>
+        <AnimatedRoutes/>
+      </Router>
   )
 }
 

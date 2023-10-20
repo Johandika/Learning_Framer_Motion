@@ -6,7 +6,9 @@ const ScrollAnimation = () => {
   return (
     <>
     {/* Penggunaan style pada scaleX karena scale-x di tailwind hanya menerima nilai dalam persen dan nilai statis, sedangkan framer menggunakan nilai dinamis */}
-      <motion.div style={{scaleX:scrollYProgress}} className={`h-2 fixed top-0 right-0 left-0 bg-blue-500 transform origin-top-left`}>
+      <motion.div style={
+        {scaleX:scrollYProgress}}
+        className={`h-2 fixed top-0 right-0 left-0 bg-blue-500 transform origin-top-left`}>
       </motion.div>
       <div className='p-20'>
         <h2 className='text-3xl font-semibold mb-6'>Coba scroll ke bawah, lihat efek scrollnya</h2>
